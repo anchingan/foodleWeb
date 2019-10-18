@@ -44,7 +44,8 @@ body {
     max-width: 80%;
 }
 body {
-    background-color: #F9E583;
+    background-color: #ffdbdb;
+/*    background-color: #F9E583;*/
     font-family: 'Noto Sans TC', sans-serif;
 }
 
@@ -59,12 +60,14 @@ h1 {
 
 hr {
     width: 400px;
-    border: 0.7px solid #F9E583;
+    border: 0.7px solid #fccccc;
+/*    border: 0.7px solid #F9E583;*/
     
 }
 
 .jumbotron {
-    background-image: url(../images/background.jpg);
+    background-image: url(https://images.unsplash.com/photo-1493808655842-aa308811e178?ixlib=rb-0.3.5&s=55272583363ed2a9c8607c5ba53e0fc0&auto=format&fit=crop&w=1500&q=80);
+/*    background-image: url(../images/background.jpg);*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,10 +75,12 @@ hr {
 }
 
 .jumbotron h1, .jumbotron h3 {
-    color: #F9E583;
+    color: #fccccc;
+/*    color: #F9E583;*/
 }
 .navbar-inverse {
-    background: #F9E583;
+    background: #ffdbdb;
+/*    background: #F9E583;*/
 /*    background: #4B6892;*/
 /*    background: #2C3150;*/
 /*    background: #23345C;*/
@@ -103,11 +108,13 @@ hr {
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover .icon-bar {
-    background-color: #F9E583;
+    background-color: #ffdbdb;
+/*    background-color: #F9E583;*/
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-    color: #F9E583;
+    color: #ffdbdb;
+/*    color: #F9E583;*/
     background-color: #4B6892;
 }
 
@@ -122,6 +129,27 @@ hr {
     font-size: 1.5em;
     color: rgba(75, 104, 146, 0.9);
     line-height: 150%;
+}
+
+.card-img-top {
+    
+    border-top-color: #4B6892;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: #4B6892;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: #4B6892;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #4B6892;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
 }
 
 #download {

@@ -36,7 +36,7 @@
                     
                     <!-- Right side -->
                     <ul class="nav  navbar-nav navbar-right">
-                        <li><a href="indexen.html">English</a></li>
+                        <li><a href="#">English</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +53,10 @@
                     
                     <div class="col-md-6">
                         <iframe src="films/intro.mp4" width="330" height="665"></iframe>
-                    </div>      
+<!--                        <iframe src="https://drive.google.com/file/d/1Yxj9T6jqcZlqJ7c1pQ345INDatt-Fv-E/preview" width="640" height="480"></iframe>-->
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -101,11 +104,11 @@
                 <p></p>
                 <p class="lead">留下AppleID，讓我們將您加入TestFlight測試名單</p>
                 <div class="container">
-                 <form class="form-inline" id="inputAppleID" method="post" action="process.php" >
+                 <form class="form-inline" id="inputAppleID">
                     <div class="form-group">
                         <label class="sr-only" for="appleID">Apple ID</label>
                         <div class="input-group", id="inputAppleID">
-                            <input type="email" class="form-control" id="appleID" placeholder="Apple ID (email)" name="email">
+                            <input type="email" class="form-control" id="appleID" placeholder="Apple ID (email)">
                         </div>
                     </div>
                     <div>
@@ -133,32 +136,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-        
-<!--         for send e-mail -->
-         <script type="text/javascript">
-             $(document).ready(function () {
-                 $("input#submit").click(function(){
-                     $.ajax({
-                         type: "POST",
-                         url: "process.php", //process to mail
-                         data: $('form.form-inline').serialize(),
-                         success: function(msg){
-                             print("Success");
-//                             $("#thanks").html(msg) //hide button and show thank you
-//                             $("#form-content").modal('hide'); //hide popup
-                         },
-                         error: function(){
-                             alert("failure");
-                         }
-                     });
-                 });
-             });
-        </script>
-        
-
-
-        
     </body>
     
 </html>

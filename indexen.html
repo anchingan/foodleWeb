@@ -36,7 +36,7 @@
                     
                     <!-- Right side -->
                     <ul class="nav  navbar-nav navbar-right">
-                        <li><a href="indexen.html">English</a></li>
+                        <li><a href="index.html">中文</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,14 +46,14 @@
             <div class="container">
                 <div id="center">
                     <div class="col-md-6">
-                        <h1>Foodle <span>美食日誌</span> </h1>
-                        <h3>讓您簡單快速完成食記</h3>
+                        <h1>Foodle</h1>
+                        <h3>Best app for foodie!</h3>
                         <hr>
                     </div>
                     
                     <div class="col-md-6">
                         <iframe src="films/intro.mp4" width="330" height="665"></iframe>
-                    </div>      
+                    </div>                
                 </div>
             </div>
         </div>
@@ -64,31 +64,32 @@
             <div class="card-deck">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">瀏覽貼文</h5>
+                        <h5 class="card-title">News feed</h5>
                     </div>
                     <img class="card-img-top" src="images/foodle1.png" alt="Card image cap">
                     
                     <div class="card-body">
-                        <p class="card-text">追蹤自己有興趣的作者及朋友，當新文章發布時即會出現在動態牆當中，也可以利用上方的篩選功能選擇有興趣的主題。</p>
+                        <p class="card-text">Follow your friends or who you're interested to see their post on your nesw feed! Press button on top to filter posts.</p>
                         
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">熱門貼文</h5>
+                        <h5 class="card-title">Hottest posts</h5>
                     </div>
                     <img class="card-img-top" src="images/foodle2.png" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">瀏覽目前最熱門的貼文以及文章廣播。</p>
+                        <p class="card-text">To read hottest posts in foodle and broadcast posts.</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">發文快選字</h5>
+                        <h5 class="card-title">Post helper</h5>
                     </div>
                     <img class="card-img-top" src="images/foodle4.png" alt="Card image cap">
                     <div class="card-body">
-                        <p class="card-text">提供有趣實用的快選字功能，發文不再需要擔心想不到文章內容！發文時可選擇多個類型標籤，亦可自訂，並可選擇餐廳或自行新增。</p>
+                        <p class="card-text">
+                        Choose a restaurant or add new one. Provide interesting words below allow you to post by easliy clicks.</p>
                     </div>
                 </div>
             </div>
@@ -99,17 +100,17 @@
             <div class="row">
                 <h2>Download the app in TestFlight! <span><img id="testFlightIcon" src="images/testflightIcon.png" margin=10px></span></h2>
                 <p></p>
-                <p class="lead">留下AppleID，讓我們將您加入TestFlight測試名單</p>
+                <p class="lead">Let us know your AppleId, we'll invite you to download in TestFlight!</p>
                 <div class="container">
-                 <form class="form-inline" id="inputAppleID" method="post" action="process.php" >
+                 <form class="form-inline" id="inputAppleID">
                     <div class="form-group">
                         <label class="sr-only" for="appleID">Apple ID</label>
                         <div class="input-group", id="inputAppleID">
-                            <input type="email" class="form-control" id="appleID" placeholder="Apple ID (email)" name="email">
+                            <input type="email" class="form-control" id="appleID" placeholder="Apple ID (email)">
                         </div>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary">加入下載清單！</button>
+                        <button type="submit" class="btn btn-primary">Join list！</button>
                     </div>
                 </form>               
                 </div>
@@ -133,32 +134,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-        
-<!--         for send e-mail -->
-         <script type="text/javascript">
-             $(document).ready(function () {
-                 $("input#submit").click(function(){
-                     $.ajax({
-                         type: "POST",
-                         url: "process.php", //process to mail
-                         data: $('form.form-inline').serialize(),
-                         success: function(msg){
-                             print("Success");
-//                             $("#thanks").html(msg) //hide button and show thank you
-//                             $("#form-content").modal('hide'); //hide popup
-                         },
-                         error: function(){
-                             alert("failure");
-                         }
-                     });
-                 });
-             });
-        </script>
-        
-
-
-        
     </body>
     
 </html>
